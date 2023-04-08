@@ -1,0 +1,28 @@
+{
+  "name": "@meteorwallet/repo-v2",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/common/*",
+    "packages/meteor_wallet/*",
+    "packages/my_near_wallet/*"
+  ],
+  "scripts": {
+    "format": "rome format --write .",
+    "lint": "rome check .",
+    "watch-meteor-ui": "turbo run watch --filter=common-ui --filter=meteor-ui",
+    "watch-mnw-ui": "turbo run watch --filter=common-ui --filter=mynearwallet-ui",
+    "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader && manypkg upgrade react-native-web-lite"
+  },
+  "devDependencies": {
+    "@manypkg/cli": "^0.20.0",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.33",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7",
+    "rome": "12.0.0",
+    "turbo": "1.8.8",
+    "typescript": "^5.0.3"
+  },
+  "packageManager": "yarn@3.5.0"
+}

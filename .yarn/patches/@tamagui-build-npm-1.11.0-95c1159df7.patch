@@ -1,0 +1,24 @@
+diff --git a/package.json b/package.json
+index 588c8c727a949029ca2aa0b02c19ee7abdeec273..1e6f002f5679e736cc45ed9388bc3113316f0ed4 100644
+--- a/package.json
++++ b/package.json
+@@ -11,14 +11,16 @@
+   "publishConfig": {
+     "access": "public"
+   },
+-  "devDependencies": {
+-    "@types/fs-extra": "^9.0.13",
++  "dependencies": {
+     "chokidar": "^3.5.2",
+     "esbuild": "^0.17.5",
+     "execa": "^5.0.0",
+     "fast-glob": "^3.2.11",
+     "fs-extra": "^11.1.0",
+-    "lodash.debounce": "^4.0.8",
++    "lodash.debounce": "^4.0.8"
++  },
++  "devDependencies": {
++    "@types/fs-extra": "^9.0.13",
+     "typescript": "^4.7.4"
+   },
+   "gitHead": "a49cc7ea6b93ba384e77a4880ae48ac4a5635c14"

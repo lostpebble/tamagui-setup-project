@@ -1,0 +1,26 @@
+{
+  "name": "@meteorwallet/meteor-ui",
+  "version": "1.0.0",
+  "sideEffects": [
+    "*.css"
+  ],
+  "private": true,
+  "types": "./types/index",
+  "main": "dist/cjs",
+  "module": "dist/esm",
+  "module:jsx": "dist/jsx",
+  "scripts": {
+    "build": "tamagui-build",
+    "watch": "tamagui-build --watch"
+  },
+  "files": [
+    "types",
+    "dist"
+  ],
+  "dependencies": {
+    "@meteorwallet/common-ui": "*"
+  },
+  "devDependencies": {
+    "@tamagui/build": "1.11.2"
+  }
+}

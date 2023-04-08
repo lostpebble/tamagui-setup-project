@@ -1,0 +1,21 @@
+{
+  "name": "@meteorwallet/meteor-app",
+  "version": "1.0.0",
+  "main": "src/index.tsx",
+  "exports": {
+    ".": "./src/index.tsx",
+    "./pages/*": "./src/pages/*.tsx"
+  },
+  "private": true,
+  "sideEffects": [
+    "*.css"
+  ],
+  "dependencies": {
+    "@meteorwallet/common-core": "*",
+    "@meteorwallet/meteor-ui": "*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33"
+  }
+}

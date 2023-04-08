@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "@meteorwallet/common-ui": [
+        "packages/common/ui"
+      ]
+    },
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "es2019",
+    "sourceMap": true,
+    "jsx": "react",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2021",
+      "dom",
+      "esnext"
+    ]
+  },
+  "exclude": [
+    "_"
+  ]
+}
