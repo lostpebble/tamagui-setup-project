@@ -4,7 +4,7 @@ export const FancyCircle = styled(YStack, {
   name: "FancyCircle",
   alignItems: "center",
   justifyContent: "center",
-  borderRadius: 100_000_000,
+  borderRadius: 10,
   overflow: "hidden",
   // alignSelf: "center",
 

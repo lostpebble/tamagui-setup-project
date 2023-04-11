@@ -21,6 +21,6 @@
     "@meteorwallet/common-ui": "*"
   },
   "devDependencies": {
-    "@tamagui/build": "1.11.2"
+    "@tamagui/build": "1.14.0"
   }
 }

@@ -3,26 +3,23 @@ module.exports = function (api) {
   return {
     presets: [["babel-preset-expo", { jsxRuntime: "automatic" }]],
     plugins: [
-      [
-        require.resolve("babel-plugin-module-resolver"),
-        {
-          root: ["../../../"],
-          extensions: [".js", ".jsx", ".tsx", ".ios.js", ".android.js"],
-        },
-      ],
+      // [
+      //   require.resolve("babel-plugin-module-resolver"),
+      //   {
+      //     root: ["../../../"],
+      //     extensions: [".js", ".jsx", ".tsx", ".ios.js", ".android.js"],
+      //   },
+      // ],
       // if you want reanimated support
       // 'react-native-reanimated/plugin',
-      ...(process.env.EAS_BUILD_PLATFORM === "android"
-        ? []
-        : [
-            [
-              "@tamagui/babel-plugin",
-              {
-                components: ["@meteorwallet/meteor-ui", "@meteorwallet/common-ui", "tamagui"],
-                config: "./tamagui.config.ts",
-              },
-            ],
-          ]),
+      [
+        "@tamagui/babel-plugin",
+        {
+          components: ["tamagui", "@meteorwallet/common-ui", "@meteorwallet/meteor-ui"],
+          config: "./src/tamagui.config.ts",
+          disableExtraction: process.env.NODE_ENV === "development",
+        },
+      ],
       [
         "transform-inline-environment-variables",
         {

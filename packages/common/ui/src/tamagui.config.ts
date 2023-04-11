@@ -61,13 +61,13 @@ export const commonUiConfigInput = {
   },
   themes: {
     ...themes,
-    dark: {
-      background: "black",
-      color: "white",
-    },
-    light: {
-      background: "#e8c4c4",
-    },
+    // dark: {
+    //   background: "black",
+    //   color: "white",
+    // },
+    // light: {
+    //   background: "#b03f3f",
+    // },
   },
   tokens: createTokens({
     ...tokens,

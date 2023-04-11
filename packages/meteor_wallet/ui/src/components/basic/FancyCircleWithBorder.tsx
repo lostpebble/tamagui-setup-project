@@ -4,7 +4,8 @@ import { GetProps } from "tamagui";
 export const FancyCircleWithBorder = styled(FancyCircle, {
   name: "FancyCircleWithBorder",
   borderWidth: "$2",
-  borderColor: "$fancyBorderColor",
+  borderColor: "#af32cb",
+  borderRadius: 1_000,
   alignSelf: "center",
 });
 
